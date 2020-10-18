@@ -6,5 +6,5 @@ window.onload = function(){
 
 // Carrousel
 $('.carousel').carousel({
-    interval: 2500
+    interval: 4000
 })
