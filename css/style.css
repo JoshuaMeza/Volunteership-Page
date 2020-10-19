@@ -17,6 +17,41 @@
 
 
 /* 
+    General Values 
+*/
+:root{
+    --navHeight: 60px;
+    --heroImageHeight: 400px;
+    --prodImageHeight: 80%;
+    --prodImageWidth: 100px;
+    --mainHeight: 2000px;
+    --footerHeight: 160px;
+    --growOne: 0;
+    --growTwo: 1;
+    --growThree: 4;
+    --navColor: #FFF686;
+    --bgColor: #FFF9F7;
+    --fontColor: #362E3B;
+    --borderColor: lightgray;
+    --footerColor: #CDFF94;
+    --whatsColor: #25D366;
+    --transitionColor: #2DF777;
+    --whatsBorder: #128C7E;
+    --hearthColor: #e90c59;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--fontColor);
+    background-color: var(--bgColor);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Sansita Swashed', cursive;
+}
+
+
+/* 
     Page Loader - Hearth Icon Code 
 */
 @keyframes ldio-7204pn5nxbe {
@@ -39,7 +74,7 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  background: #e90c59;
+  background: var(--hearthColor);
   transform: rotate(45deg);
 }
 
@@ -49,7 +84,7 @@
   display: block;
   width: 100px;
   height: 100px;
-  background: #e90c59;
+  background: var(--hearthColor);
 }
 
 .ldio-7204pn5nxbe > div div:before {
@@ -93,35 +128,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-/* 
-    General Values 
-*/
-:root{
-    --navHeight: 60px;
-    --heroImageHeight: 400px;
-    --mainHeight: 2000px;
-    --footerHeight: 160px;
-    --growOne: 0;
-    --growTwo: 1;
-    --growThree: 4;
-    --navColor: #FFF686;
-    --bgColor: #FFF9F7;
-    --fontColor: #362E3B;
-    --borderColor: lightgray;
-    --footerColor: #CDFF94;
-}
-
-body {
-    font-family: 'Noto Sans', sans-serif;
-    color: var(--fontColor);
-    background-color: var(--bgColor);
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Sansita Swashed', cursive;
 }
 
 
@@ -199,10 +205,6 @@ h1, h2, h3, h4, h5 {
     /* Hero */
     .hero {
         padding-top: var(--navHeight);
-    }
-
-    .hero h1 {
-        font-size: 10px;
     }
 
     .carousel-caption {
@@ -439,6 +441,8 @@ h1, h2, h3, h4, h5 {
     :root{
         --navHeight: 50px;
         --heroImageHeight: 60vh;
+        --prodImageHeight: 180px;
+        --prodImageWidth: 70%;
         --mainHeight: 3000px;
         --footerHeight: 195px;
         --growOne: 1;
@@ -510,7 +514,7 @@ h1, h2, h3, h4, h5 {
 
     /* Main Size */
     .main {
-        height: var(--mainHeight);
+        height: auto;
     }
 
     /* Hero */
@@ -528,16 +532,18 @@ h1, h2, h3, h4, h5 {
         font-weight: bold;
     }
 
-    .carousel-caption {
-        bottom: 5%;
+    .capHero { /**/
         z-index: 10;
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        padding: 0;
     }
 
-    .carousel-item {
+    .cHero { /**/
         height: var(--heroImageHeight);
     }
 
-    .carousel-item > img {
+    .cHero > img { /**/
         position: absolute;
         top: 0;
         left: 0;
@@ -546,9 +552,7 @@ h1, h2, h3, h4, h5 {
     }
 
     /* Content */
-    .space {
-        width: 90%;
-        margin: 20px auto;
+    .space { /**/
         text-align: center;
     }
 
@@ -565,8 +569,20 @@ h1, h2, h3, h4, h5 {
         font-size: 16px;
     }
 
-    .content {
+    .content, .contentLine { /**/
+        width: 90%;
+        margin: 20px auto;
         border-bottom: solid 2px var(--borderColor);
+    }
+
+    #not-same-space { /**/
+        width: 100%;
+        margin: 20px auto 0 auto;
+        border-bottom: none;
+    }
+
+    #noLine { /**/
+        border-bottom: none;
     }
 
     .aboutBox { /**/
@@ -580,6 +596,7 @@ h1, h2, h3, h4, h5 {
     }
 
     .aboutImage { /**/
+        border-radius: 5px;
         width: 40%;
         height: 90%;
         margin: 10px;
@@ -597,8 +614,20 @@ h1, h2, h3, h4, h5 {
     }
 
     .adImage { /**/
+        border-radius: 5px;
+        max-width: 500px;
         width: 100%;
         height: 160px;
+    }
+
+    #adOne { /**/
+        background-image: url('../img/adOneMobile.png');
+        background-size: 100% 160px;
+    }
+
+    #adTwo { /**/
+        background-image: url('../img/adTwoMobile.png');
+        background-size: 100% 160px;
     }
 
     .adText { /**/
@@ -608,7 +637,7 @@ h1, h2, h3, h4, h5 {
 
     .serviceContainer { /**/
         width: 100%;
-        height: 510px;
+        height: 480px;
         margin: 0 auto;
         box-sizing: border-box;
         display: grid;
@@ -617,7 +646,7 @@ h1, h2, h3, h4, h5 {
         'three four'
         'five six';
         grid-template-columns: 50% 50%;
-        grid-template-rows: 150px 150px 150px;
+        grid-template-rows: 150px 150px 120px;
     }
 
     .serviceBox { /**/
@@ -644,7 +673,7 @@ h1, h2, h3, h4, h5 {
         text-align: center;
     }
 
-    #a1 {
+    #a1 { /**/
         grid-area: one;
     }
     #a2 {
@@ -662,7 +691,76 @@ h1, h2, h3, h4, h5 {
     #a6 {
         grid-area: six;
     }
+    
+    .whBtn { /**/
+        margin: 0 auto 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
 
+    .refBtn { /**/
+        text-decoration: none;
+        color: var(--bgColor);
+        font-size: 16px;
+        font-weight: bold;
+        width: 40%;
+        padding: 10px;
+        background-color: var(--whatsColor);
+        border: solid var(--whatsBorder) 2px;
+        border-radius: 6px;
+        transition: all 0.3s ease-out;
+    }
+
+    .refBtn:Hover { /**/
+        text-decoration: none;
+        color: var(--bgColor);
+        font-size: 16px;
+        font-weight: bold;
+        background-image: linear-gradient(var(--whatsColor), var(--transitionColor), var(--whatsColor));
+    }
+
+    .productTable{ /**/
+        margin: 0 auto 30px auto;
+        width: 80%;
+        height: 150px;
+        border-collapse: collapse;
+        border-radius: 5px;
+        border: solid var(--borderColor) 2px;
+    }
+
+    .productTable th { /**/
+        border-collapse: collapse;
+        border-radius: 5px;
+        border: solid var(--borderColor) 2px;
+        width: 100%;
+        height: 120px;
+    }
+
+    .productTable td { /**/
+        border-collapse: collapse;
+        border-radius: 5px;
+        border: solid var(--borderColor) 2px;
+        width: 100%;
+        height: 30px;
+    }
+
+    .productDescription { /**/
+        text-align: center;
+        margin: 4px auto;
+    }
+
+    .productImage { /**/
+        width: 100%;
+        height: 100%;
+    }
+
+    iframe{ /**/
+        width: 100%;
+        height: 300px;
+        margin: 0 auto 20px auto;
+    }
 
     /* Footer */
     .footer {
@@ -672,7 +770,7 @@ h1, h2, h3, h4, h5 {
         padding-top: 10px;
     }
 
-    .footer, .footer a {
+    .footer, .footer p, .footer a {
         text-decoration: none;
         font-size: 10px;
         color: var(--fontColor);
