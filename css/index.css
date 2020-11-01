@@ -1,0 +1,17 @@
+:root {
+    --borderColor: lightgray;
+}
+
+#logo {
+    width: 35px;
+    height: 30px;
+}
+
+.content {
+    margin: 3% auto 1% auto ;
+}
+
+.reduce {
+    width: 80%;
+    border-bottom: var(--borderColor);
+}
