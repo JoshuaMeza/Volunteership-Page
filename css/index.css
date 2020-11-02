@@ -4,34 +4,6 @@
 
 
 
-#logo {
-    width: 35px;
-    height: 30px;
-}
-
-
-
-.content {
-    margin: 3% auto 1% auto ;
-}
-
-.reduce {
-    width: 80%;
-    border-bottom: var(--borderColor);
-}
-
-
-
-#heroCarousel .carousel-inner .carousel-item .carousel-caption {
-    text-shadow: -1px -1px 1px black, 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
-}
-
-#heroCarousel .carousel-inner .carousel-item .carousel-caption h5{
-    font-family: 'Noto Sans', sans-serif;
-}
-
-
-
 .us-card {
 	width: 60%;
 	height: 40%;

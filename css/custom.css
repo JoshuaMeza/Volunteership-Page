@@ -6,7 +6,7 @@
 	--buttonTextColor: white;
 }
 
-.navbar {
+.navbar, .footer {
     box-shadow: 0px 0px 10px var(--shadowNav);
 }
 
@@ -20,6 +20,14 @@
 
 #heroCarousel .carousel-inner .carousel-item img {
     height: 70vh;
+}
+
+#heroCarousel .carousel-inner .carousel-item .carousel-caption {
+    text-shadow: -1px -1px 1px var(--shadowHero), 1px 1px 1px var(--shadowHero), -1px 1px 1px var(--shadowHero), 1px -1px 1px var(--shadowHero);
+}
+
+#heroCarousel .carousel-inner .carousel-item .carousel-caption h5{
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .card-text {

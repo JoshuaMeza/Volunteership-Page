@@ -6,6 +6,8 @@
     --bgColor: #FFF9F7;
 }
 
+
+
 body {
     font-family: 'Noto Sans', sans-serif;
     color: var(--fontColor);
@@ -27,6 +29,24 @@ hr {
 
 a {
     color: var(--fontColor);
+}
+
+#logo {
+    width: 35px;
+    height: 30px;
+}
+
+.arrow {
+    font-size: 3rem;
+}
+
+.content {
+    margin: 3% auto 1% auto ;
+}
+
+.reduce {
+    width: 80%;
+    border-bottom: var(--borderColor);
 }
 
 .animation {
