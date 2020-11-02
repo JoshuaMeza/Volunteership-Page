@@ -39,7 +39,7 @@
 
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="./img/favicon.png" id="logo" alt="Logo">
             </a>
             <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
@@ -64,12 +64,12 @@
 
             <!-- Hero -->
             <div class="container reduce">
-                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#heroCarousel" data-slide-to="1"></li>
+                        <li data-target="#heroCarousel" data-slide-to="2"></li>
+                        <li data-target="#heroCarousel" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -77,7 +77,7 @@
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>Bienvenido a Fashión Pet's Margon</h1>
-                                    <h5>Cada perrito es un pedazo del amor que nuestra madre nos heredó, y deseamos compartírselo al mundo.</p>
+                                    <h5>Cada perrito es un pedazo del amor que nuestra madre nos heredó y deseamos compartírselo al mundo.</p>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>Bienvenido a Fashión Pet's Margon</h1>
-                                    <h5>Cada perrito es un pedazo del amor que nuestra madre nos heredó, y deseamos compartírselo al mundo.</p>
+                                    <h5>Cada perrito es un pedazo del amor que nuestra madre nos heredó y deseamos compartírselo al mundo.</p>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>Bienvenido a Fashión Pet's Margon</h1>
-                                    <h5>Cada perrito es un pedazo del amor que nuestra madre nos heredó, y deseamos compartírselo al mundo.</p>
+                                    <h5>Cada perrito es un pedazo del amor que nuestra madre nos heredó y deseamos compartírselo al mundo.</p>
                                 </div>
                             </div>
                         </div>
@@ -104,15 +104,15 @@
                             <div class="container">
                                 <div class="carousel-caption">
                                     <h1>Bienvenido a Fashión Pet's Margon</h1>
-                                    <h5>Cada perrito es un pedazo del amor que nuestra madre nos heredó, y deseamos compartírselo al mundo.</p>
+                                    <h5>Cada perrito es un pedazo del amor que nuestra madre nos heredó y deseamos compartírselo al mundo.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
                         <i class="fas fa-angle-double-left fa-3x"></i>
                     </a>
-                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
                         <i class="fas fa-angle-double-right fa-3x"></i>
                     </a>
                 </div>
@@ -125,7 +125,7 @@
                 <h2> ¿Quiénes somos? </h2>
 
                 <div class="us-card my-3 mx-auto">
-                    <figure class="card-figure">
+                    <figure class="card-figure animation">
                         <img src="./img/aboutOne.png" class="rounded img-fluid">
                     </figure>
                     <div class="card-text">
@@ -134,7 +134,7 @@
                 </div>
         
                 <div class="us-card my-3 mx-auto">
-                    <figure class="card-figure">
+                    <figure class="card-figure animation">
                         <img src="./img/aboutTwo.png" class="rounded img-fluid">
                     </figure>
                     <div class="card-text">
@@ -143,7 +143,7 @@
                 </div>
         
                 <div class="us-card my-3 mx-auto">
-                    <figure class="card-figure">
+                    <figure class="card-figure animation">
                         <img src="./img/aboutThree.png" class="rounded img-fluid">
                     </figure>
                     <div class="card-text">
@@ -177,125 +177,170 @@
                 <hr>
             </section>
 
-            <!-- REWORKING AND CLEANING -->
+            
 
             <!-- Services -->
-            <section class="content">
+            <section class="content reduce">
                 <h2> Servicios </h2>
-                <div class="serviceContainer">
-                    <div class="serviceOption">
-                        <div id="a1" class="serviceBox">
-                            <img src="./img/negro.png" alt="Servicio" class="serviceImage">
-                            <p class="serviceText">Venta de cachorros</p>                       
-                        </div>
+
+                <div class="row mx-auto justify-content-center">
+                    <div class="col-6 col-lg-4 mx-auto ser-col animation">
+                        <img src="./img/puppy.png" alt="Cachorro" class="rounded-circle ser-img mx-auto">
+                        <p class="text-center">Venta de cachorros</p>
                     </div>
-                    <div class="serviceOption">
-                        <div id="a2" class="serviceBox">
-                            <img src="./img/negro.png" alt="Servicio" class="serviceImage">
-                            <p class="serviceText">Hotel para perros</p>                       
-                        </div>
+                    <div class="col-6 col-lg-4 mx-auto ser-col animation">
+                        <img src="./img/hotel.jpeg" alt="Hotel" class="rounded-circle ser-img mx-auto">
+                        <p class="text-center">Hotel para perros</p>
                     </div>
-                    <div class="serviceOption">
-                        <div id="a3" class="serviceBox">
-                            <img src="./img/negro.png" alt="Servicio" class="serviceImage">
-                            <p class="serviceText">Baño para perros</p>                       
-                        </div>
+                    <div class="col-6 col-lg-4 mx-auto ser-col animation">
+                        <img src="./img/negro.png" alt="Cachorro" class="rounded-circle ser-img mx-auto">
+                        <p class="text-center">Baño para perros</p>
                     </div>
-                    <div class="serviceOption">
-                        <div id="a4" class="serviceBox">
-                            <img src="./img/negro.png" alt="Servicio" class="serviceImage">
-                            <p class="serviceText">Venta de productos</p>                       
-                        </div>
+                    <div class="col-6 col-lg-4 mx-auto ser-col animation">
+                        <img src="./img/negro.png" alt="Cachorro" class="rounded-circle ser-img mx-auto">
+                        <p class="text-center">Venta de productos</p>
                     </div>
-                    <div class="serviceOption">
-                        <div id="a5" class="serviceBox">
-                            <img src="./img/negro.png" alt="Servicio" class="serviceImage">
-                            <p class="serviceText">Supervisión veterinaria<br><a href="https://www.facebook.com/misionanimalconkal/" target="_blank" rel="noopener noreferrer">[Misión Animal Conkal]</a></p>                       
-                        </div>
+                    <div class="col-6 col-lg-4 mx-auto ser-col animation">
+                        <a href="https://www.facebook.com/misionanimalconkal/" target="_blank" rel="noopener noreferrer" class="ser-col text-decoration-none">
+                            <img src="./img/MAK.jpg" alt="Misión Animal Conkal" class="rounded-circle ser-img mx-auto">
+                            <p class="text-center">Supervisión veterinaria</p>
+                        </a>
                     </div>
-                    <div class="serviceOption">
-                        <div id="a6" class="serviceBox">
-                            <img src="./img/negro.png" alt="Servicio" class="serviceImage">
-                            <p class="serviceText">Asesorías en Crianza</p>                       
-                        </div>
+                    <div class="col-6 col-lg-4 mx-auto ser-col animation">
+                        <img src="./img/advicePuppy.png" alt="Cachorro" class="rounded-circle ser-img mx-auto">
+                        <p class="text-center">Asesorías en Crianza</p>
                     </div>
                 </div>
-                <div class="whBtn">
-                    <a href="https://api.whatsapp.com/send?phone=559993500913" target="blank" rel="noopener noreferrer" class="refBtn">¡Haznos una pregunta!</a>
+
+                <div class="container btn-align">
+                    <a href="https://api.whatsapp.com/send?phone=559993500913" target="blank">
+                        <button type="button" class="btn btn-warning">¡Haznos una pregunta!</button>
+                    </a> 
                 </div>
+                
+                <hr>
+
             </section>
 
 
 
             <!-- Products -->
-            <section class="content" id="not-same-space">
+            <section class="content reduce">
                 <h2> Productos </h2>
-                <div class="productSlick">
-                    <div class="productItem">
-                        <table class="productTable">
-                            <tr>
-                                <th>
-                                    <img src="./img/negro.png" alt="Producto" class="productImage">
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="productDescription">Producto 1</p>
-                                </td>
-                            </tr>
-                        </table>
+
+                    <div class="row mx-auto prod-car">
+                        <!-- Prev button -->
+                        <div class="container col-2 col-sm-2 organize">
+                            
+                            <button class="btn btn-dark side-btn" href="#products-carousel" data-slide="prev"><i class="fas fa-magic mr-1"></i> Left</button>
+                        
+                        </div>
+                        
+                        <div class="container col-8 col-sm-8">
+                            <!-- Carousel -->
+                            <div id="products-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+                                <!-- Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <!-- First slide -->
+                                    <div class="carousel-item active">
+                                        
+                                        <div class="row mx-auto">
+                                            <div class="col-6 col-sm-6">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Producto 1</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6 col-sm-6">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Producto 1</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Second slide -->
+                                    <div class="carousel-item">
+                                        
+                                        <div class="row mx-auto">
+                                            <div class="col-6 col-sm-6">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Producto 1</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6 col-sm-6">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Producto 1</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Third slide -->
+                                    <div class="carousel-item">
+                                        
+                                        <div class="row mx-auto">
+                                            <div class="col-6 col-sm-6">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Producto 1</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6 col-sm-6">
+                                                <div class="card">
+                                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Producto 1</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Next button -->
+                        <div class="container col-2 col-sm-2 organize">
+
+                            <button class="btn btn-dark side-btn" href="#products-carousel" data-slide="next"><i class="fas fa-magic ml-1"></i> Rigth</button>
+
+                        </div>
                     </div>
-                    <div class="productItem">
-                        <table class="productTable">
-                            <tr>
-                                <th>
-                                    <img src="./img/negro.png" alt="Producto" class="productImage">
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="productDescription">Producto 2</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="productItem">
-                        <table class="productTable">
-                            <tr>
-                                <th>
-                                    <img src="./img/negro.png" alt="Producto" class="productImage">
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="productDescription">Producto 3</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="productItem">
-                        <table class="productTable">
-                            <tr>
-                                <th>
-                                    <img src="./img/negro.png" alt="Producto" class="productImage">
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="productDescription">Producto 4</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+
+                <hr>
+
             </section>
 
 
 
             <!-- Contact Us -->
-            <section class="content" id="noLine">
+            <section class="content reduce">
                 <h2> Contáctanos </h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14885.678853670473!2d-89.52459067879587!3d21.135688939353432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f55d7abc72e23bf%3A0xf08831c1ea0ef04b!2sChicxulub%2C%20Yucatan!5e0!3m2!1sen!2smx!4v1603061239638!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14885.678853670473!2d-89.52459067879587!3d21.135688939353432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f55d7abc72e23bf%3A0xf08831c1ea0ef04b!2sChicxulub%2C%20Yucatan!5e0!3m2!1sen!2smx!4v1603061239638!5m2!1sen!2smx" class="map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </section>
 
         </main>
@@ -304,17 +349,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="order">
-                <div class="license">
-                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br>Este obra está bajo <br>una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de <br>Creative Commons <br>Reconocimiento 4.0 <br>Internacional</a>.
-                </div>
-                <div class="contactInfo">
-
-                </div>
-                <div class="socialMedia">
-
-                </div>
-            </div>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
         </footer>
 
 

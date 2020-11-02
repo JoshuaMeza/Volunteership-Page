@@ -2,10 +2,14 @@
     --borderColor: lightgray;
 }
 
+
+
 #logo {
     width: 35px;
     height: 30px;
 }
+
+
 
 .content {
     margin: 3% auto 1% auto ;
@@ -14,4 +18,75 @@
 .reduce {
     width: 80%;
     border-bottom: var(--borderColor);
+}
+
+
+
+#heroCarousel .carousel-inner .carousel-item .carousel-caption {
+    text-shadow: -1px -1px 1px black, 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+}
+
+#heroCarousel .carousel-inner .carousel-item .carousel-caption h5{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+.us-card {
+	width: 60%;
+	height: 40%;
+	padding: 1%;
+
+	border-radius: 5px;
+	border: 1px solid var(--borderColor);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.us-card .card-figure {
+	max-width: 40%;
+	margin: auto;
+}
+
+.us-card .card-text {
+	max-width: 50%;
+	margin: auto;
+}
+
+
+
+.de-card{
+    margin: auto;
+    width: 60%;
+}
+
+#de-card-second {
+    margin-top: 2%;
+}
+
+
+
+.ser-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ser-img {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.prod-car {
+    width: 90%;
+}
+
+.organize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
