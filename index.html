@@ -22,7 +22,7 @@
 	    <script src="https://kit.fontawesome.com/c701fdf070.js" crossorigin="anonymous"></script>
 
         <!-- Icon -->
-        <link href="./img/favicon.png" rel="shortcut icon" type="image/png">
+        <link href="./img/icon/favicon.png" rel="shortcut icon" type="image/png">
     </head>
 
 
@@ -40,14 +40,19 @@
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <a class="navbar-brand" href="index.html">
-                <img src="./img/favicon.png" id="logo" alt="Logo">
+                <img src="./img/icon/favicon.png" id="logo" alt="Logo">
             </a>
             <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Mascotas</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mascotas</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item hover-item" href="./templates/bulldog.html"><i class="fas fa-paw"></i> Bulldog Inglés</a>
+                        <a class="dropdown-item hover-item" href="./templates/yorkie.html"><i class="fas fa-paw"></i> Yorkshire Terrier</a>
+                        <a class="dropdown-item hover-item" href="./templates/shihtzu.html"><i class="fas fa-paw"></i> Shih Tzu</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://api.whatsapp.com/send?phone=+529993500913&text=¡Hola!%20Me%20gustaría%20agendar%20una%20cita." target="blank">Agendar una cita</a>
@@ -60,7 +65,7 @@
 
 
 
-        <main class="main">
+        <main>
 
             <!-- Hero -->
             <div class="container reduce">
@@ -116,7 +121,7 @@
                         <i class="fas fa-angle-double-right arrow"></i>
                     </a>
                 </div>
-            </div>  
+            </div>
 
 
 

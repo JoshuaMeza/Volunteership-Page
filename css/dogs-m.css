@@ -49,16 +49,6 @@ a {
     border-bottom: var(--borderColor);
 }
 
-.animation {
-    transform: scale(0.95);
-	transition: 0.2s all;
-}
-
-.animation:hover {
-    filter: saturate(1.3);
-    transform: scale(1);
-}
-
 .map-container {
     display: flex;
     justify-content: center;
