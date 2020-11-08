@@ -1,0 +1,99 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700&display=swap');
+
+/* Variables */
+:root{
+    --borderColor: lightgray;
+    --fontColor: #362E3B;
+    --bgColor: #FFF9F7;
+}
+
+
+
+/* General values */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--fontColor);
+    background-color: var(--bgColor);
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+hr {
+    margin: 5%;   
+}
+
+a {
+    color: var(--fontColor);
+}
+
+
+
+/* Logo size */
+#logo {
+    width: 35px;
+    height: 30px;
+}
+
+
+
+/* Arrow of the carousel */
+.arrow {
+    font-size: 3rem;
+}
+
+
+
+/* Sections management */
+.content {
+    margin: 3% auto 1% auto ;
+}
+
+.reduce {
+    width: 80%;
+    border-bottom: var(--borderColor);
+}
+
+
+
+/* Status */
+.status-col {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.status-img {
+    font-size: 100px;
+    margin: 25px auto 15px auto;
+}
+
+
+
+/* Cares */
+.cares {
+    width: 80%;
+}
+
+
+
+/* Map */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 90%;
+    height: 70vh;
+}
