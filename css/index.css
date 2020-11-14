@@ -91,6 +91,11 @@ a {
 	align-items: center;
 }
 
+.us-card-variant {
+  /* Recuerda revisar si se ve bien esto en Firefox */
+  flex-direction: row-reverse;
+}
+
 .us-card .card-figure {
 	max-width: 40%;
 	margin: auto;

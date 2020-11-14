@@ -1,39 +1,40 @@
 :root {
-    --iconSize: 3.5rem;
-    --facebookColor: #3b5998;
-    --instagramColor: #cd486b;
+  --iconSize: 3.5rem;
+  --facebookColor: #3b5998;
+  --instagramColor: #cd486b;
 }
 
 .license {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.face-icon , .insta-icon {
-    font-size: var(--iconSize);
+.face-icon,
+.insta-icon {
+  font-size: var(--iconSize);
 
-    margin: 0 10px;
+  margin: 0 10px;
 
-    transform: scale(0.95);
-	transition: 0.2s all;
+  transform: scale(0.95);
+  transition: 0.2s all;
 }
 
 .face-icon:hover {
-    color: var(--facebookColor);
+  color: var(--facebookColor);
 
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .insta-icon:hover {
-    color: var(--instagramColor);
+  color: var(--instagramColor);
 
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }

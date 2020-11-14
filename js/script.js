@@ -1,15 +1,15 @@
 // Pausing the start of the carousel
 $('.carousel').carousel({
-    ride: true,
+  ride: true,
 })
 
 // Loading screen
 $(document).ready(() => {
-    $('#onload').fadeOut();
+  $('#onload').fadeOut();
 
-    // Activating the carousel
-    $('.carousel').carousel({
-        interval: 500,
-        ride: false,
-    })
+  // Activating the carousel
+  $('.carousel').carousel({
+    interval: 500,
+    ride: false,
+  })
 })
