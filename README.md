@@ -2,6 +2,8 @@
 
 <img src="https://github.com/JoshuaMeza/Volunteership-Page/blob/master/GitHubResources/CodingTalkersCover.png" alt="Coding Talkers Cover" width="100%" height="auto">
 
+Imagen recuperada de [Coding Talkers](https://www.facebook.com/CodingTalkers).
+
 ## Description
 
 [Coding Talkers](https://github.com/Coding-Talkers) organized a volunteer event to help industries affected by the coronavirus pandemic in which the volunteers can work with people that are involved in the software development industry. For more information [click here](https://www.facebook.com/CodingTalkers/posts/159769029056185).
