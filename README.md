@@ -2,7 +2,7 @@
 
 <img src="https://github.com/JoshuaMeza/Volunteership-Page/blob/master/GitHubResources/CodingTalkersCover.png" alt="Coding Talkers Cover" width="100%" height="auto">
 
-Imagen recuperada de [Coding Talkers](https://www.facebook.com/CodingTalkers).
+Picture of [Coding Talkers](https://www.facebook.com/CodingTalkers).
 
 ## Description
 
