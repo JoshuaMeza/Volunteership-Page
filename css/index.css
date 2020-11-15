@@ -9,6 +9,11 @@
   --bgColor: #fff9f7;
 }
 
+/* Design settings */
+.mob-version {
+  display: none !important;
+}
+
 /* General values */
 body {
   font-family: "Noto Sans", sans-serif;
@@ -127,10 +132,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.mob-version {
-  display: none;
 }
 
 /* Map */

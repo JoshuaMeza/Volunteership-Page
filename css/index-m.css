@@ -50,7 +50,7 @@
 @media (max-width: 768px) {
   /* Important design changes between views */
   .mob-version {
-    display: block;
+    display: flex !important;
   }
 
   .pc-version {
