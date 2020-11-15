@@ -142,6 +142,10 @@ a {
     justify-content: center;
 }
 
+.mob-version {
+    display: none;
+}
+
 
 
 /* Map */

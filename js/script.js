@@ -4,8 +4,8 @@ $('.carousel').carousel({
 })
 
 // Loading screen
-$(document).ready(() => {
-    $('#onload').fadeOut();
+$(window).on('load', function () {
+    $('#onload').fadeOut('slow');
 
     // Activating the carousel
     $('.carousel').carousel({

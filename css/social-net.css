@@ -37,3 +37,31 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .footer .text-muted {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .icons {
+        flex-direction: column;
+    }
+
+    .license img {
+        margin: 10px auto;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+
+}
