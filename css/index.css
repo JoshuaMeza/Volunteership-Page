@@ -1,161 +1,146 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700&display=swap");
 
 /* Variables */
 :root {
-    --borderColor: lightgray;
-    --fontColor: #362E3B;
-    --bgColor: #FFF9F7;
+  --borderColor: lightgray;
+  --fontColor: #362e3b;
+  --bgColor: #fff9f7;
 }
-
-
 
 /* General values */
 body {
-    font-family: 'Noto Sans', sans-serif;
-    color: var(--fontColor);
-    background-color: var(--bgColor);
+  font-family: "Noto Sans", sans-serif;
+  color: var(--fontColor);
+  background-color: var(--bgColor);
 }
 
-h1 , h2 , h3 , h4 , h5 , h6 {
-    font-family: 'Sansita Swashed', cursive;
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
 }
 
 h2 {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 hr {
-    margin: 5%;   
+  margin: 5%;
 }
 
 a {
-    color: var(--fontColor);
+  color: var(--fontColor);
 }
-
-
 
 /* Animation */
 .animation {
-    transform: scale(0.95);
-	transition: 0.2s all;
+  transform: scale(0.95);
+  transition: 0.2s all;
 }
 
 .animation:hover {
-    filter: saturate(1.3);
-    transform: scale(1);
+  filter: saturate(1.3);
+  transform: scale(1);
 }
-
-
 
 /* Logo size */
 #logo {
-    width: 35px;
-    height: 30px;
+  width: 35px;
+  height: 30px;
 }
-
-
 
 /* Arrow of the carousel */
 .arrow {
-    font-size: 3rem;
+  font-size: 3rem;
 }
-
-
 
 /* Sections management */
 .content {
-    margin: 3% auto 1% auto ;
+  margin: 3% auto 1% auto;
 }
 
 .reduce {
-    width: 80%;
-    border-bottom: var(--borderColor);
+  width: 80%;
+  border-bottom: var(--borderColor);
 }
-
-
 
 /* About us */
 .us-card {
-	width: 60%;
-	height: 40%;
-	padding: 1%;
+  width: 60%;
+  height: 40%;
+  padding: 1%;
 
-	border-radius: 5px;
-	border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  border: 1px solid var(--borderColor);
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .us-card .card-figure {
-	max-width: 40%;
-	margin: auto;
+  max-width: 40%;
+  margin: auto;
 }
 
 .us-card .card-text {
-	max-width: 50%;
-	margin: auto;
+  max-width: 50%;
+  margin: auto;
 }
 
-
-
 /* Deals */
-.de-card{
-    margin: auto;
-    width: 60%;
+.de-card {
+  margin: auto;
+  width: 60%;
 }
 
 #de-card-second {
-    margin-top: 2%;
+  margin-top: 2%;
 }
-
-
 
 /* Services */
 .ser-col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .ser-img {
-    width: 200px;
-    height: 200px;
-    margin: 10px auto;
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
 }
-
-
 
 /* Products */
 .prod-car {
-    width: 90%;
+  width: 90%;
 }
 
 .organize {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mob-version {
-    display: none;
+  display: none;
 }
-
-
 
 /* Map */
 .map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .map {
-    width: 90%;
-    height: 70vh;
+  width: 90%;
+  height: 70vh;
 }

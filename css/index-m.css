@@ -1,90 +1,77 @@
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 575px){
-    /* Sections management */
-    .content {
-        margin: 5% auto 2% auto ;
-    }
+@media (max-width: 575px) {
+  /* Sections management */
+  .content {
+    margin: 5% auto 2% auto;
+  }
 
-    .reduce {
-        width: 100%;
-    }
+  .reduce {
+    width: 100%;
+  }
 
+  /* Size */
+  .de-card,
+  .us-card {
+    width: 90%;
+  }
 
-    /* Size */
-    .de-card, .us-card {
-        width: 90%;
-    }
+  /* Hero */
+  .carousel-caption h1 {
+    font-size: 25px;
+  }
 
+  .carousel-caption h5 {
+    font-size: 14px;
+  }
 
-    /* Hero */
-    .carousel-caption h1 {
-        font-size: 25px;
-    }
+  #heroCarousel .carousel-inner .carousel-item img {
+    height: 50vh;
+  }
 
-    .carousel-caption h5 {
-        font-size: 14px;
-    }
+  /* Services */
+  .ser-img {
+    width: 140px;
+    height: 140px;
+    margin: 5px auto;
+  }
 
-    #heroCarousel .carousel-inner .carousel-item img {
-        height: 50vh;
-    }
+  /* Products */
+  .card {
+    margin: 10px auto;
+  }
 
-
-    /* Services */
-    .ser-img {
-        width: 140px;
-        height: 140px;
-        margin: 5px auto;
-    }
-
-    
-    /* Products */
-    .card {
-        margin: 10px auto;
-    }
-
-    .prod-car .btn-dark{
-        font-size: 20px;
-        z-index: 10;
-    }
+  .prod-car .btn-dark {
+    font-size: 20px;
+    z-index: 10;
+  }
 }
-
-
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-    /* Important design changes between views */
-    .mob-version {
-        display: block;
-    }
+  /* Important design changes between views */
+  .mob-version {
+    display: block;
+  }
 
-    .pc-version {
-        display: none !important;
-    }
+  .pc-version {
+    display: none !important;
+  }
 
+  /* Navbar */
+  .navbar-nav {
+    display: none;
+  }
 
-    /* Navbar */
-    .navbar-nav {
-        display: none;
-    }
-
-
-    /* Map */
-    .map {
-        height: 60vh;
-    }
+  /* Map */
+  .map {
+    height: 60vh;
+  }
 }
-
-
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-
 }
 
-
-
 /* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) { 
-    
+@media (max-width: 1200px) {
 }

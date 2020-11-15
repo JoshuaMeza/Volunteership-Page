@@ -1,56 +1,59 @@
 :root {
-    --navColor: #FFF686;
-	--shadowNav: gray;
-	--shadowHero: black;
-	--borderColor: lightgray;
-	--buttonTextColor: white;
-	--hearthColor: #e90c59;
+  --navColor: #fff686;
+  --shadowNav: gray;
+  --shadowHero: black;
+  --borderColor: lightgray;
+  --buttonTextColor: white;
+  --hearthColor: #e90c59;
 }
 
-.navbar, .footer {
-    box-shadow: 0px 0px 10px var(--shadowNav);
+.navbar,
+.footer {
+  box-shadow: 0px 0px 10px var(--shadowNav);
 }
 
 .hover-item {
-	transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
 }
 
-.hover-item:hover , .hover-item:active {
-	color: var(--hearthColor);
+.hover-item:hover,
+.hover-item:active {
+  color: var(--hearthColor);
 }
 
 .bg-light {
-    background-color: var(--navColor) !important;
+  background-color: var(--navColor) !important;
 }
 
 #heroCarousel {
-	box-shadow: 0px 3px 10px var(--shadowHero);
+  box-shadow: 0px 3px 10px var(--shadowHero);
 }
 
 #heroCarousel .carousel-inner .carousel-item img {
-    height: 70vh;
+  height: 70vh;
 }
 
 #heroCarousel .carousel-inner .carousel-item .carousel-caption {
-    text-shadow: -1px -1px 1px var(--shadowHero), 1px 1px 1px var(--shadowHero), -1px 1px 1px var(--shadowHero), 1px -1px 1px var(--shadowHero);
+  text-shadow: -1px -1px 1px var(--shadowHero), 1px 1px 1px var(--shadowHero),
+    -1px 1px 1px var(--shadowHero), 1px -1px 1px var(--shadowHero);
 }
 
-#heroCarousel .carousel-inner .carousel-item .carousel-caption h5{
-    font-family: 'Noto Sans', sans-serif;
+#heroCarousel .carousel-inner .carousel-item .carousel-caption h5 {
+  font-family: "Noto Sans", sans-serif;
 }
 
 .card-text {
-    text-align: center;
+  text-align: center;
 }
 
 .btn {
-	color: var(--buttonTextColor) !important;
-	font-weight: bold;
+  color: var(--buttonTextColor) !important;
+  font-weight: bold;
 }
 
 .btn-align {
-	margin: 2% auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  margin: 2% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
