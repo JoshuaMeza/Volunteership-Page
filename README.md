@@ -12,7 +12,7 @@ Picture of [Coding Talkers](https://www.facebook.com/CodingTalkers).
 
 My name is [Joshua Meza](https://github.com/JoshuaMeza), and my mentor is [Luis Azcuaga](https://github.com/luisAzcuaga), and we worked in the creation of the landing page for the business called [Fashión Pets Margon](https://www.facebook.com/FashionPetsMargon).
 
-## Techologies used
+## Technologies used
 
 - Html5
 - CSS3
