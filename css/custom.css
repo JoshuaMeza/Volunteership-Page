@@ -30,7 +30,7 @@
 }
 
 #heroCarousel .carousel-inner .carousel-item img {
-  height: 70vh;
+  height: 60vh;
 }
 
 #heroCarousel .carousel-inner .carousel-item .carousel-caption {
@@ -52,7 +52,7 @@
 }
 
 .btn-align {
-  margin: 2% auto;
+  margin: 1% auto;
   display: flex;
   justify-content: center;
   align-items: center;

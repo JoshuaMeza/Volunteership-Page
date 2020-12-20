@@ -7,6 +7,8 @@
   --borderColor: lightgray;
   --fontColor: #362e3b;
   --bgColor: #fff9f7;
+  --heroArrowSize: 3rem;
+  --mobileMenuSize: 1.5rem;
 }
 
 /* Design settings */
@@ -54,15 +56,15 @@ a {
   transform: scale(1);
 }
 
-/* Logo size */
-#logo {
-  width: 35px;
-  height: 30px;
+/* Navbar */
+.nav-item .fas {
+  color: var(--fontColor);
+  font-size: var(--mobileMenuSize);
 }
 
-/* Arrow of the carousel */
+/* Carousel's arrow */
 .arrow {
-  font-size: 3rem;
+  font-size: var(--heroArrowSize);
 }
 
 /* Sections management */
@@ -71,13 +73,18 @@ a {
 }
 
 .reduce {
-  width: 80%;
+  width: 85%;
   border-bottom: var(--borderColor);
+}
+
+/* Navbar */
+.navbar {
+  height: 10vh;
 }
 
 /* About us */
 .us-card {
-  width: 60%;
+  width: 70%;
   height: 40%;
   padding: 1%;
 
@@ -99,6 +106,10 @@ a {
   margin: auto;
 }
 
+#reverse {
+  flex-direction: row-reverse !important;
+}
+
 /* Deals */
 .de-card {
   margin: auto;
@@ -115,12 +126,6 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.ser-img {
-  width: 200px;
-  height: 200px;
-  margin: 10px auto;
 }
 
 /* Products */

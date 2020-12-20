@@ -13,3 +13,15 @@ $(window).on("load", function () {
     ride: false,
   });
 });
+
+var flag = 0;
+
+$("#menu-btn").click(function () {
+  if (flag == 0){
+    $("#menu").addClass("get-in");
+    flag = 1;
+  }else{
+    $("#menu").removeClass("get-in");
+    flag = 0;
+  }
+});

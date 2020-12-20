@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/index-m.css">
     <link rel="stylesheet" type="text/css" href="./css/social-net.css">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
     <link rel="stylesheet" type="text/css" href="./css/loader.css">
 
     <!-- FONT AWESOME CDN -->
@@ -46,14 +47,14 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand my-auto" href="index.html">
             <img src="./img/icon/favicon.png" id="logo" alt="Logo">
         </a>
-        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
-            <li class="nav-item active">
+        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto my-auto">
+            <li class="nav-item active pc-version">
                 <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown pc-version">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Mascotas</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -65,23 +66,65 @@
                         Tzu</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item pc-version">
                 <a class="nav-link"
                     href="https://api.whatsapp.com/send?phone=+529993500913&text=¡Hola!%20Me%20gustaría%20agendar%20una%20cita."
                     target="blank">Agendar una cita</a>
+            </li>
+            <li class="nav-item mob-version">
+                <i class="fas fa-bars" id="menu-btn"></i>
             </li>
     </nav>
 
 
 
     <!-- Mobile Menu -->
+    <div class="menu mob-version" id="menu">
+        <h2>Mascotas</h2>
 
+        <div class="row justify-content-center">
+            <div class="col-6 menu-col">
+                <a href="./templates/bulldog.html" class="menu-col">
+                    <img src="./img/negro.png" alt="Pitbull" class="rounded-circle menu-img">
+                    <p class="text-center">Bulldog Inglés</p>
+                </a>
+            </div>
+            <div class="col-6 menu-col">
+                <a href="./templates/yorkie.html" class="menu-col">
+                    <img src="./img/negro.png" alt="Yorkshire Terrier" class="rounded-circle menu-img">
+                    <p class="text-center">Yorkshire Terrier</p>
+                </a>
+            </div>
+            <div class="col-6 menu-col">
+                <a href="./templates/shihtzu.html" class="menu-col">
+                    <img src="./img/negro.png" alt="Shihtzu" class="rounded-circle menu-img">
+                    <p class="text-center">Shihtzu</p>
+                </a>
+            </div>
+        </div>
+
+        <h2>Otras opciones</h2>
+
+        <div class="container btn-align">
+            <a href="./index.html">
+                <button type="button" class="btn btn-info">Volver al inicio</button>
+            </a>
+        </div>
+
+        <div class="container btn-align">
+            <a href="https://api.whatsapp.com/send?phone=+529993500913&text=¡Hola!%20Me%20gustaría%20agendar%20una%20cita."
+                target="blank">
+                <button type="button" class="btn btn-warning">¡Agenda una cita ya!</button>
+            </a>
+        </div>
+
+    </div>
 
 
     <main>
 
         <!-- Hero -->
-        <div class="reduce mx-auto">
+        <div class="reduce mx-auto dont-reduce">
             <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
@@ -148,7 +191,7 @@
 
         <!-- About Us -->
         <section class="content reduce mx-auto">
-            <h2> ¿Quiénes somos? </h2>
+            <h2>¿Quiénes somos?</h2>
 
             <div class="us-card my-3 mx-auto">
                 <figure class="card-figure animation">
@@ -159,10 +202,10 @@
                 </div>
             </div>
 
-            <div class="us-card my-3 mx-auto">
-                <figure class="card-figure animation">
+            <div class="us-card my-3 mx-auto" id="reverse">
+                <div class="card-figure animation">
                     <img src="./img/index/aboutTwo.png" class="rounded img-fluid">
-                </figure>
+                </div>
                 <div class="card-text">
                     Estamos más que agradecidos con nuestros perritos, eso nos motiva a buscarles el mejor hogar.
                 </div>
@@ -185,7 +228,7 @@
 
         <!-- Deals -->
         <section class="content reduce">
-            <h2> Promociones </h2>
+            <h2>Promociones</h2>
 
             <div class="card de-card">
                 <img src="./img/index/adOne.png" class="card-img-top" alt="Promoción">
@@ -210,34 +253,34 @@
 
         <!-- Services -->
         <section class="content reduce">
-            <h2> Servicios </h2>
+            <h2>Servicios</h2>
 
-            <div class="row mx-auto justify-content-center">
-                <div class="col-6 col-lg-4 mx-auto ser-col animation">
-                    <img src="./img/index/puppy.png" alt="Cachorro" class="rounded-circle ser-img mx-auto">
+            <div class="row justify-content-center">
+                <div class="col-6 col-lg-4 ser-col animation">
+                    <img src="./img/index/puppy.png" alt="Cachorro" class="rounded-circle ser-img">
                     <p class="text-center">Venta de cachorros</p>
                 </div>
-                <div class="col-6 col-lg-4 mx-auto ser-col animation">
-                    <img src="./img/index/hotel.png" alt="Hotel" class="rounded-circle ser-img mx-auto">
+                <div class="col-6 col-lg-4 ser-col animation">
+                    <img src="./img/index/hotel.png" alt="Hotel" class="rounded-circle ser-img">
                     <p class="text-center">Hotel para perros</p>
                 </div>
-                <div class="col-6 col-lg-4 mx-auto ser-col animation">
-                    <img src="./img/index/shower.png" alt="Cachorro" class="rounded-circle ser-img mx-auto">
+                <div class="col-6 col-lg-4 ser-col animation">
+                    <img src="./img/index/shower.png" alt="Cachorro" class="rounded-circle ser-img">
                     <p class="text-center">Baño para perros</p>
                 </div>
-                <div class="col-6 col-lg-4 mx-auto ser-col animation">
-                    <img src="./img/index/food.jpg" alt="Cachorro" class="rounded-circle ser-img mx-auto">
+                <div class="col-6 col-lg-4 ser-col animation">
+                    <img src="./img/index/food.jpg" alt="Cachorro" class="rounded-circle ser-img">
                     <p class="text-center">Venta de comida</p>
                 </div>
-                <div class="col-6 col-lg-4 mx-auto ser-col animation">
+                <div class="col-6 col-lg-4 ser-col animation">
                     <a href="https://www.facebook.com/misionanimalconkal/" target="_blank" rel="noopener noreferrer"
                         class="ser-col text-decoration-none">
                         <img src="./img/index/MAK.jpg" alt="Misión Animal Conkal"
-                            class="rounded-circle ser-img mx-auto">
+                            class="rounded-circle ser-img">
                         <p class="text-center">Supervisión veterinaria</p>
                     </a>
                 </div>
-                <div class="col-6 col-lg-4 mx-auto ser-col animation">
+                <div class="col-6 col-lg-4 ser-col animation">
                     <img src="./img/index/advicePuppy.png" alt="Cachorro" class="rounded-circle ser-img mx-auto">
                     <p class="text-center">Asesorías en Crianza</p>
                 </div>
@@ -258,23 +301,22 @@
 
         <!-- Products -->
         <section class="content reduce">
-            <h2> Productos </h2>
+            <h2>Productos</h2>
 
-            <div class="row mx-auto prod-car">
+            <!-- PC -->
+            <div class="row mx-auto prod-car pc-version">
                 <!-- Prev button -->
                 <div class="col-2 col-sm-2 organize">
 
-                    <button class="btn btn-dark side-btn pc-version" href="#products-carousel" data-slide="prev"><i
-                            class="fas fa-magic mr-1"></i> Izquierda</button>
-
-                    <button class="btn btn-dark side-btn mob-version" href="#products-carousel"
-                        data-slide="prev">👈</button>
+                    <button class="btn btn-dark side-btn" href="#products-carousel-pc" data-slide="prev">
+                        Izquierda
+                    </button>
 
                 </div>
 
                 <div class="container col-8 col-sm-8">
                     <!-- Carousel -->
-                    <div id="products-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+                    <div id="products-carousel-pc" class="carousel slide carousel-multi-item" data-ride="carousel">
                         <!-- Slides -->
                         <div class="carousel-inner" role="listbox">
                             <!-- First slide -->
@@ -359,14 +401,101 @@
                 <!-- Next button -->
                 <div class="col-2 col-sm-2 organize">
 
-                    <button class="btn btn-dark side-btn pc-version" href="#products-carousel" data-slide="next">Derecha
-                        <i class="fas fa-magic ml-1"></i></button>
+                    <button class="btn btn-dark side-btn" href="#products-carousel-pc" data-slide="next">
+                        Derecha
+                    </button>
 
-                    <button class="btn btn-dark side-btn mob-version" href="#products-carousel"
+                </div>
+            </div>
+
+
+            <!-- Mobile -->
+            <div class="row mx-auto prod-car mob-version">
+                <!-- Prev button -->
+                <div class="col-2 col-sm-2 organize">
+
+                    <button class="btn btn-dark side-btn" href="#products-carousel-mob"
+                        data-slide="prev">👈</button>
+
+                </div>
+
+                <div class="container col-8 col-sm-8">
+                    <!-- Carousel -->
+                    <div id="products-carousel-mob" class="carousel slide carousel-multi-item" data-ride="carousel">
+                        <!-- Slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="carousel-item active">
+                                <div class="card mx-auto">
+                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Nupec</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card mx-auto">
+                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Producto 2</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card mx-auto">
+                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Producto 3</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card mx-auto">
+                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Producto 4</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+
+                                <div class="card mx-auto">
+                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Producto 5</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-item">
+
+                                <div class="card mx-auto">
+                                    <img class="card-img-top" src="./img/negro.png" alt="Producto">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Producto 6</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next button -->
+                <div class="col-2 col-sm-2 organize">
+
+                    <button class="btn btn-dark side-btn" href="#products-carousel-mob"
                         data-slide="next">👉</button>
 
                 </div>
             </div>
+
 
             <div class="container btn-align">
                 <a href="https://api.whatsapp.com/send?phone=+529996436889&text=¡Hola!%20Me%20gustaría%20cotizar%20una%20bolsa%20de%20comida."
@@ -383,7 +512,7 @@
 
         <!-- Contact Us -->
         <section class="content reduce">
-            <h2> Contáctanos </h2>
+            <h2>Contáctanos</h2>
 
             <div class="map-container">
                 <iframe
