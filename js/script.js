@@ -17,10 +17,10 @@ $(window).on("load", function () {
 var flag = 0;
 
 $("#menu-btn").click(function () {
-  if (flag == 0){
+  if (flag == 0) {
     $("#menu").addClass("get-in");
     flag = 1;
-  }else{
+  } else {
     $("#menu").removeClass("get-in");
     flag = 0;
   }

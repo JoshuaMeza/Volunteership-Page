@@ -9,7 +9,7 @@ p {
 }
 
 #logo {
-  width: 50px; 
+  width: 50px;
   height: 45px;
   margin: auto;
 }
@@ -21,14 +21,13 @@ p {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-
   /* Logo size */
   #logo {
-    width: 35px; 
+    width: 35px;
     height: 30px;
   }
 
-  /* Service images */ 
+  /* Service images */
   .ser-img {
     width: 280px;
     height: 280px;
@@ -78,7 +77,7 @@ p {
 @media (max-width: 575px) {
   /* Logo size */
   #logo {
-    width: 45px; 
+    width: 45px;
     height: 40px;
   }
 
