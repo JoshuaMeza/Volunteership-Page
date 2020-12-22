@@ -34,14 +34,15 @@ h6 {
 }
 
 h2 {
-  margin-bottom: 2%;
+  margin-bottom: 3.5%;
 }
 
 hr {
   margin: 5%;
 }
 
-a {
+a,
+#ser-link {
   color: var(--fontColor);
 }
 
@@ -57,7 +58,7 @@ a {
 }
 
 /* Navbar */
-.nav-item .fas {
+#menu-btn {
   color: var(--fontColor);
   font-size: var(--mobileMenuSize);
 }

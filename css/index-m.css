@@ -1,34 +1,35 @@
-/* Used to search errors
+/* Used to search mistakes
 * {
   border: 1px solid black !important;
 }
 */
 
-p {
+p,
+.card-text {
   font-size: 18px;
 }
 
 #logo {
-  width: 50px; 
+  width: 50px;
   height: 45px;
   margin: auto;
 }
 
 .ser-img {
-  width: 260px;
-  height: 260px;
+  width: 240px;
+  height: 240px;
+  margin-bottom: 15px;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-
   /* Logo size */
   #logo {
-    width: 35px; 
+    width: 35px;
     height: 30px;
   }
 
-  /* Service images */ 
+  /* Service images */
   .ser-img {
     width: 280px;
     height: 280px;
@@ -41,8 +42,6 @@ p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* Important design changes between views */
-
   /* Carousel */
   #heroCarousel .carousel-inner .carousel-item img {
     height: 40vh;
@@ -78,13 +77,8 @@ p {
 @media (max-width: 575px) {
   /* Logo size */
   #logo {
-    width: 45px; 
+    width: 45px;
     height: 40px;
-  }
-
-  /* Carousel height */
-  #heroCarousel .carousel-inner .carousel-item img {
-    height: 60vh;
   }
 
   /* Sections management */
@@ -96,6 +90,11 @@ p {
     width: 90%;
   }
 
+  p,
+  .card-text {
+    font-size: 14px;
+  }
+
   /* Size */
   .de-card,
   .us-card {
@@ -103,6 +102,10 @@ p {
   }
 
   /* Hero */
+  #heroCarousel .carousel-inner .carousel-item img {
+    height: 60vh;
+  }
+
   .carousel-caption h1 {
     font-size: 25px;
   }

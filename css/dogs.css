@@ -7,6 +7,8 @@
   --borderColor: lightgray;
   --fontColor: #362e3b;
   --bgColor: #fff9f7;
+  --heroArrowSize: 3rem;
+  --mobileMenuSize: 1.5rem;
 }
 
 /* General values */
@@ -27,7 +29,7 @@ h6 {
 }
 
 h2 {
-  margin-bottom: 2%;
+  margin-bottom: 3.5%;
 }
 
 hr {
@@ -38,15 +40,15 @@ a {
   color: var(--fontColor);
 }
 
-/* Logo size */
-#logo {
-  width: 35px;
-  height: 30px;
+/* Navbar */
+#menu-btn {
+  color: var(--fontColor);
+  font-size: var(--mobileMenuSize);
 }
 
 /* Arrow of the carousel */
 .arrow {
-  font-size: 3rem;
+  font-size: var(--heroArrowSize);
 }
 
 /* Sections management */
@@ -55,7 +57,7 @@ a {
 }
 
 .reduce {
-  width: 80%;
+  width: 85%;
   border-bottom: var(--borderColor);
 }
 
@@ -68,13 +70,16 @@ a {
 }
 
 .status-img {
-  font-size: 100px;
   margin: 25px auto 15px auto;
 }
 
 /* Cares */
 .cares {
   width: 80%;
+}
+
+.cares p {
+  margin-bottom: 4%;
 }
 
 /* Map */
