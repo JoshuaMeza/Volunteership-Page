@@ -3,6 +3,12 @@
   --fontColor: #362e3b;
 }
 
+a,
+a:active {
+  text-decoration: none;
+  color: var(--fontColor);
+}
+
 .menu {
   background-color: var(--color);
   z-index: 100;
