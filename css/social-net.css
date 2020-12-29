@@ -1,7 +1,17 @@
 :root {
-  --iconSize: 3.5rem;
+  --iconSize: 5vw;
   --facebookColor: #3b5998;
   --instagramColor: #cd486b;
+  --footerTitleSize: 1.6vw;
+  --footerTextSize: 1.3vw;
+}
+
+h5 {
+  font-size: var(--footerTitleSize);
+}
+
+.footer-text {
+  font-size: var(--footerTextSize);
 }
 
 .license {
@@ -14,7 +24,7 @@
 .insta-icon {
   font-size: var(--iconSize);
 
-  margin: 0 10px;
+  margin: 0 0.5vw;
 
   transform: scale(0.95);
   transition: 0.2s all;
@@ -38,11 +48,12 @@
   justify-content: center;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-  .footer .text-muted {
-    font-size: 16px;
-  }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -56,10 +67,11 @@
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  :root {
+    --iconSize: 12vw;
+    --footerTitleSize: 4.4vw;
+    --footerTextSize: 3.8vw;
+  }
 }

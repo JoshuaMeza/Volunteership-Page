@@ -7,8 +7,9 @@
   --borderColor: lightgray;
   --fontColor: #362e3b;
   --bgColor: #fff9f7;
-  --heroArrowSize: 3rem;
-  --mobileMenuSize: 1.5rem;
+  --titlesSize: 2.4vw;
+  --textSize: 1.5vw;
+  --productsNamesSize: 1.7vw;
 }
 
 /* Design settings */
@@ -34,7 +35,14 @@ h6 {
 }
 
 h2 {
+  font-size: var(--titlesSize);
   margin-bottom: 3.5%;
+}
+
+p,
+.card-text,
+.btn {
+  font-size: var(--textSize);
 }
 
 hr {
@@ -57,17 +65,6 @@ a,
   transform: scale(1);
 }
 
-/* Navbar */
-#menu-btn {
-  color: var(--fontColor);
-  font-size: var(--mobileMenuSize);
-}
-
-/* Carousel's arrow */
-.arrow {
-  font-size: var(--heroArrowSize);
-}
-
 /* Sections management */
 .content {
   margin: 3% auto 1% auto;
@@ -78,14 +75,9 @@ a,
   border-bottom: var(--borderColor);
 }
 
-/* Navbar */
-.navbar {
-  height: 10vh;
-}
-
 /* About us */
 .us-card {
-  width: 70%;
+  width: 60%;
   height: 40%;
   padding: 1%;
 
@@ -114,19 +106,25 @@ a,
 /* Deals */
 .de-card {
   margin: auto;
-  width: 60%;
+  width: 50%;
 }
 
 #de-card-second {
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 /* Services */
 .ser-col {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+}
+
+.ser-img {
+  width: 18vw;
+  height: 18vw;
+  margin-bottom: 5%;
 }
 
 /* Products */
@@ -138,6 +136,10 @@ a,
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card-title {
+  font-size: var(--productsNamesSize);
 }
 
 /* Map */

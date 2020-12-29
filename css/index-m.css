@@ -4,54 +4,18 @@
 }
 */
 
-p,
-.card-text {
-  font-size: 18px;
-}
-
 #logo {
-  width: 50px;
-  height: 45px;
+  width: 4.5vw;
+  height: 3.8vw;
   margin: auto;
-}
-
-.ser-img {
-  width: 240px;
-  height: 240px;
-  margin-bottom: 15px;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-  /* Logo size */
-  #logo {
-    width: 35px;
-    height: 30px;
-  }
-
-  /* Service images */
-  .ser-img {
-    width: 280px;
-    height: 280px;
-  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-  /* Carousel */
-  #heroCarousel .carousel-inner .carousel-item img {
-    height: 40vh;
-  }
-
-  .dont-reduce {
-    width: 100% !important;
-    margin: 0 !important;
-  }
-
   /* Visual management */
   .mob-version {
     display: flex !important;
@@ -60,11 +24,23 @@ p,
   .pc-version {
     display: none !important;
   }
+}
 
-  /* Services */
-  .ser-img {
-    width: 230px;
-    height: 230px;
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  /* Sections management */
+  .content {
+    margin: 5% auto 5% auto;
+  }
+
+  .reduce {
+    width: 90%;
+  }
+
+  /* About us card */
+  .us-card {
+    width: 80%;
+    margin-bottom: 5%;
   }
 
   /* Map */
@@ -74,25 +50,31 @@ p,
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 575px) {
-  /* Logo size */
-  #logo {
-    width: 45px;
-    height: 40px;
-  }
-
+@media (max-width: 576px) {
   /* Sections management */
   .content {
     margin: 5% auto 2% auto;
   }
 
-  .reduce {
-    width: 90%;
+  /* Logo */
+  #logo {
+    width: 13vw;
+    height: 11.5vw;
+  }
+
+  /* Text */
+  h2 {
+    font-size: 8vw;
   }
 
   p,
-  .card-text {
-    font-size: 14px;
+  .card-text,
+  .btn {
+    font-size: 4vw;
+  }
+
+  .card-title {
+    font-size: 4.7vw;
   }
 
   /* Size */
@@ -101,32 +83,14 @@ p,
     width: 90% !important;
   }
 
-  /* Hero */
-  #heroCarousel .carousel-inner .carousel-item img {
-    height: 60vh;
-  }
-
-  .carousel-caption h1 {
-    font-size: 25px;
-  }
-
-  .carousel-caption h5 {
-    font-size: 14px;
-  }
-
   /* Services */
   .ser-img {
-    width: 120px;
-    height: 120px;
+    width: 35vw;
+    height: 35vw;
   }
 
   /* Products */
   .card {
     margin: 10px auto;
-  }
-
-  .prod-car .btn-dark {
-    font-size: 20px;
-    z-index: 10;
   }
 }

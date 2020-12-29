@@ -7,8 +7,13 @@
   --borderColor: lightgray;
   --fontColor: #362e3b;
   --bgColor: #fff9f7;
-  --heroArrowSize: 3rem;
-  --mobileMenuSize: 1.5rem;
+  --titlesSize: 2.4vw;
+  --textSize: 1.5vw;
+}
+
+/* Design settings */
+.mob-version {
+  display: none !important;
 }
 
 /* General values */
@@ -29,7 +34,14 @@ h6 {
 }
 
 h2 {
+  font-size: var(--titlesSize);
   margin-bottom: 3.5%;
+}
+
+p,
+.card-text,
+.btn {
+  font-size: var(--textSize);
 }
 
 hr {
@@ -38,17 +50,6 @@ hr {
 
 a {
   color: var(--fontColor);
-}
-
-/* Navbar */
-#menu-btn {
-  color: var(--fontColor);
-  font-size: var(--mobileMenuSize);
-}
-
-/* Arrow of the carousel */
-.arrow {
-  font-size: var(--heroArrowSize);
 }
 
 /* Sections management */
@@ -64,13 +65,13 @@ a {
 /* Status */
 .status-col {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   flex-direction: column;
 }
 
 .status-img {
-  margin: 25px auto 15px auto;
+  margin: 4vh auto 1.8vh auto;
 }
 
 /* Cares */

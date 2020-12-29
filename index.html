@@ -46,40 +46,42 @@
 
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top my-auto">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">
             <img src="./img/icon/favicon.png" id="logo" alt="Logo">
         </a>
-        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto my-auto">
             <li class="nav-item active pc-version">
-                <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                <a class="nav-link nav-text" href="index.html">Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown pc-version">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Mascotas</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item hover-item" href="./templates/bulldog.html"><i class="fas fa-paw"></i>
+                    <a class="dropdown-item hover-item nav-text" href="./templates/bulldog.html"><i class="fas fa-paw"></i>
                         Bulldog Inglés</a>
-                    <a class="dropdown-item hover-item" href="./templates/yorkie.html"><i class="fas fa-paw"></i>
+                    <a class="dropdown-item hover-item nav-text" href="./templates/yorkie.html"><i class="fas fa-paw"></i>
                         Yorkshire Terrier</a>
-                    <a class="dropdown-item hover-item" href="./templates/shihtzu.html"><i class="fas fa-paw"></i> Shih
-                        Tzu</a>
+                    <a class="dropdown-item hover-item nav-text" href="./templates/shihtzu.html"><i class="fas fa-paw"></i>
+                        Shih Tzu</a>
                 </div>
             </li>
             <li class="nav-item pc-version">
-                <a class="nav-link"
+                <a class="nav-link nav-text"
                     href="https://api.whatsapp.com/send?phone=+529993500913&text=¡Hola!%20Me%20gustaría%20agendar%20una%20cita."
                     target="blank">Agendar una cita</a>
             </li>
             <li class="nav-item mob-version">
-                <i class="fas fa-bars" id="menu-btn"></i>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-content" aria-controls="menu-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </li>
     </nav>
 
 
 
     <!-- Mobile Menu -->
-    <div class="menu mob-version" id="menu">
+    <div class="collapse menu" id="menu-content">
         <h2>Mascotas</h2>
 
         <div class="row justify-content-center">
@@ -107,17 +109,16 @@
 
         <div class="container btn-align">
             <a href="./index.html">
-                <button type="button" class="btn btn-info">Volver al inicio</button>
+                <button type="button" class="btn btn-info menu-btn">Volver al inicio</button>
             </a>
         </div>
 
         <div class="container btn-align">
             <a href="https://api.whatsapp.com/send?phone=+529993500913&text=¡Hola!%20Me%20gustaría%20agendar%20una%20cita."
                 target="blank">
-                <button type="button" class="btn btn-warning">¡Agenda una cita ya!</button>
+                <button type="button" class="btn btn-warning menu-btn">¡Agenda una cita ya!</button>
             </a>
         </div>
-
     </div>
 
 
@@ -537,17 +538,17 @@
             <div class="col-9 col-sm-8">
                 <h5 class="text-left">Más información</h5>
                 <ul class="list-unstyled text-small">
-                    <li class="text-muted"><i class="far fa-clock"></i> ¡Siempre estamos disponibles!</li>
-                    <li><a class="text-muted" href="https://api.whatsapp.com/send?phone=+529993500913" target="blank"><i
+                    <li class="text-muted footer-text"><i class="far fa-clock"></i> ¡Siempre estamos disponibles!</li>
+                    <li><a class="text-muted footer-text" href="https://api.whatsapp.com/send?phone=+529993500913" target="blank"><i
                                 class="fab fa-whatsapp-square"></i> +52 999 - 350 - 0913</a></li>
-                    <li><a class="text-muted" href="https://api.whatsapp.com/send?phone=+529996436889" target="blank"><i
+                    <li><a class="text-muted footer-text" href="https://api.whatsapp.com/send?phone=+529996436889" target="blank"><i
                                 class="fab fa-whatsapp-square"></i> +52 999 - 643 - 6889</a></li>
-                    <li><a class="text-muted" href="https://goo.gl/maps/9rwoEFwtA2TAXzKW9" target="blank"><i
+                    <li><a class="text-muted footer-text" href="https://goo.gl/maps/9rwoEFwtA2TAXzKW9" target="blank"><i
                                 class="fas fa-map-marked-alt"></i> Calle 26 número 148 por 35 y 37 colonia Beatriz
                             Velazco Alemán</a></li>
-                    <li class="pc-version"><a class="text-muted" href="mailto:fashionpetsmargon@gmail.com"
+                    <li class="pc-version"><a class="text-muted footer-text" href="mailto:fashionpetsmargon@gmail.com"
                             target="blank"><i class="fas fa-envelope"></i> fashionpetsmargon@gmail.com</a></li>
-                    <li class="mob-version"><a class="text-muted" href="mailto:fashionpetsmargon@gmail.com"
+                    <li class="mob-version"><a class="text-muted footer-text" href="mailto:fashionpetsmargon@gmail.com"
                             target="blank"><i class="fas fa-envelope"></i> fashionpetsmargon<br>@gmail.com</a></li>
                 </ul>
             </div>

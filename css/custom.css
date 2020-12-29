@@ -5,11 +5,42 @@
   --borderColor: lightgray;
   --buttonTextColor: white;
   --hearthColor: #e90c59;
+  --heroArrowSize: 4vw;
+  --navbarHeight: 10vh;
+  --heroTitleSize: 2.5vw;
+  --heroCaptionSize: 1.6vw;
+  --navbarText: 1.3vw;
+}
+
+h1 {
+  font-size: var(--heroTitleSize);
+}
+
+h5 {
+  font-size: var(--heroCaptionSize);
 }
 
 .navbar,
 .footer {
   box-shadow: 0px 0px 10px var(--shadowNav);
+}
+
+.navbar {
+  height: var(--navbarHeight);
+}
+
+.navbar,
+.navbar .navbar-brand,
+.navbar .navbar-nav,
+.navbar .nav-item {
+  display: flex;
+  align-items: center !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.nav-text {
+  font-size: var(--navbarText);
 }
 
 .hover-item {
@@ -42,6 +73,10 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+.arrow {
+  font-size: var(--heroArrowSize);
+}
+
 .card-text {
   text-align: center;
 }
@@ -56,4 +91,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 60px;
+  }
+
+  #heroCarousel .carousel-inner .carousel-item img {
+    height: 40vh;
+    min-height: 400px;
+  }
+
+  .dont-reduce {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  :root {
+    --heroArrowSize: 11vw;
+    --heroTitleSize: 8.5vw;
+    --heroCaptionSize: 4.4vw;
+  }
+
+  .navbar {
+    min-height: 50px;
+  }
+
+  #heroCarousel .carousel-inner .carousel-item img {
+    height: 60vh;
+  }
 }
