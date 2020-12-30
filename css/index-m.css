@@ -12,6 +12,35 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
+  /* Size */
+  .us-card,
+  .de-card {
+    width: 70%;
+  }
+
+  /* Logo */
+  #logo {
+    width: 6vw;
+    height: 5vw;
+
+    max-width: 12vh;
+    max-height: 10vh;
+  }
+
+  /* Text */
+  h2 {
+    font-size: 4vw;
+  }
+
+  p,
+  .card-text,
+  .btn {
+    font-size: 2.2vw;
+  }
+
+  .card-title {
+    font-size: 2.5vw;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -31,8 +60,8 @@
 
   /* Logo */
   #logo {
-    width: 7vw;
-    height: 6vw;
+    width: 6vw;
+    height: 4.2vw;
 
     max-width: 12vh;
     max-height: 9.5vh;
@@ -88,9 +117,6 @@
   #logo {
     width: 7.8vw;
     height: 7vw;
-
-    max-width: 12vh;
-    max-height: 9.5vh;
   }
 
   /* Text */

@@ -50,6 +50,11 @@ h5 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
+  :root {
+    --iconSize: 6.4vw;
+    --footerTitleSize: 2.2vw;
+    --footerTextSize: 1.7vw;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */

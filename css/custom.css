@@ -85,6 +85,20 @@ h5 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
+  :root {
+    --heroArrowSize: 7.6vw;
+    --heroTitleSize: 4.2vw;
+    --heroCaptionSize: 2.2vw;
+    --navbarText: 1.7vw;
+  }
+
+  .navbar {
+    max-height: 8vw;
+  }
+
+  #heroCarousel .carousel-inner .carousel-item img {
+    max-height: 60vw;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -97,11 +111,13 @@ h5 {
 
   .navbar {
     min-height: 6vw;
+    max-height: 20vh;
   }
 
   #heroCarousel .carousel-inner .carousel-item img {
     height: 40vh;
     min-height: 400px;
+    max-height: 100vw;
   }
 
   .dont-reduce {
