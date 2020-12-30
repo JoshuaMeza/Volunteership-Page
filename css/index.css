@@ -140,6 +140,8 @@ a,
 
 .card-title {
   font-size: var(--productsNamesSize);
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 /* Map */

@@ -7,7 +7,7 @@
   --hearthColor: #e90c59;
   --heroArrowSize: 4vw;
   --navbarHeight: 10vh;
-  --heroTitleSize: 2.5vw;
+  --heroTitleSize: 2.4vw;
   --heroCaptionSize: 1.6vw;
   --navbarText: 1.3vw;
 }
@@ -27,16 +27,6 @@ h5 {
 
 .navbar {
   height: var(--navbarHeight);
-}
-
-.navbar,
-.navbar .navbar-brand,
-.navbar .navbar-nav,
-.navbar .nav-item {
-  display: flex;
-  align-items: center !important;
-  margin-top: auto !important;
-  margin-bottom: auto !important;
 }
 
 .nav-text {
@@ -87,7 +77,7 @@ h5 {
 }
 
 .btn-align {
-  margin: 1% auto;
+  margin: 3% auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,12 +89,14 @@ h5 {
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-}
+  :root {
+    --heroArrowSize: 9.3vw;
+    --heroTitleSize: 5.2vw;
+    --heroCaptionSize: 2.8vw;
+  }
 
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
   .navbar {
-    min-height: 60px;
+    min-height: 6vw;
   }
 
   #heroCarousel .carousel-inner .carousel-item img {
@@ -118,6 +110,19 @@ h5 {
   }
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  :root {
+    --heroArrowSize: 9.3vw;
+    --heroTitleSize: 5.6vw;
+    --heroCaptionSize: 2.6vw;
+  }
+
+  .navbar {
+    min-height: 9.5vw;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   :root {
@@ -127,7 +132,7 @@ h5 {
   }
 
   .navbar {
-    min-height: 50px;
+    min-height: 11vw;
   }
 
   #heroCarousel .carousel-inner .carousel-item img {

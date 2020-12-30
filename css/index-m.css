@@ -24,6 +24,57 @@
   .pc-version {
     display: none !important;
   }
+
+  .reduce {
+    width: 90%;
+  }
+
+  /* Logo */
+  #logo {
+    width: 7vw;
+    height: 6vw;
+
+    max-width: 12vh;
+    max-height: 9.5vh;
+  }
+
+  /* Text */
+  h2 {
+    font-size: 5.2vw;
+  }
+
+  p,
+  .card-text,
+  .btn {
+    font-size: 2.6vw;
+  }
+
+  .card-title {
+    font-size: 3.4vw;
+  }
+
+  /* Size */
+  .us-card {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  .de-card {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+
+  /* Services */
+  .ser-img {
+    width: 23vw;
+    height: 23vw;
+  }
+
+  /* Map */
+  .map {
+    height: 60vh;
+    min-height: 400px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -33,19 +84,44 @@
     margin: 5% auto 5% auto;
   }
 
-  .reduce {
-    width: 90%;
+  /* Logo */
+  #logo {
+    width: 7.8vw;
+    height: 7vw;
+
+    max-width: 12vh;
+    max-height: 9.5vh;
   }
 
-  /* About us card */
-  .us-card {
-    width: 80%;
-    margin-bottom: 5%;
+  /* Text */
+  h2 {
+    font-size: 5vw;
+  }
+
+  p,
+  .card-text,
+  .btn {
+    font-size: 2.4vw;
+  }
+
+  .card-title {
+    font-size: 3.2vw;
+  }
+
+  /* Services */
+  #service-images {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  /* Products */
+  .carousel .carousel-inner .carousel-item .card .card-img-top {
+    max-height: 30vw;
   }
 
   /* Map */
   .map {
-    height: 60vh;
+    min-height: 300px;
   }
 }
 
@@ -58,8 +134,8 @@
 
   /* Logo */
   #logo {
-    width: 13vw;
-    height: 11.5vw;
+    width: 12vw;
+    height: 10.8vw;
   }
 
   /* Text */
@@ -80,7 +156,11 @@
   /* Size */
   .de-card,
   .us-card {
-    width: 90% !important;
+    width: 90%;
+  }
+
+  #service-images {
+    width: 100%;
   }
 
   /* Services */
