@@ -41,6 +41,12 @@
   .card-title {
     font-size: 2.5vw;
   }
+
+  /* Products */
+  .carousel .carousel-inner .carousel-item .card .card-img-top {
+    max-height: 16vw;
+    min-height: 18vh;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -104,6 +110,12 @@
     height: 60vh;
     min-height: 400px;
   }
+
+  /* Products */
+  .carousel .carousel-inner .carousel-item .card .card-img-top {
+    max-height: 40vw;
+    min-height: 22vh;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -138,11 +150,6 @@
   #service-images {
     width: 85%;
     margin: 0 auto;
-  }
-
-  /* Products */
-  .carousel .carousel-inner .carousel-item .card .card-img-top {
-    max-height: 30vw;
   }
 
   /* Map */
@@ -198,5 +205,10 @@
   /* Products */
   .card {
     margin: 10px auto;
+  }
+
+  .carousel .carousel-inner .carousel-item .card .card-img-top {
+    max-height: 40vw;
+    min-height: 20vh;
   }
 }
